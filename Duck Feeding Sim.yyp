@@ -4,6 +4,7 @@
   "name": "Duck Feeding Sim",
   "resources": [
     {"id":{"name":"obj_oven","path":"objects/obj_oven/obj_oven.yy",},"order":2,},
+    {"id":{"name":"controller","path":"objects/controller/controller.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"obj_duck","path":"objects/obj_duck/obj_duck.yy",},"order":1,},
     {"id":{"name":"constants","path":"scripts/constants/constants.yy",},"order":11,},

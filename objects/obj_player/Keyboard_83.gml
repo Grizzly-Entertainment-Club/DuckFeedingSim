@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-y += moveSpeed;
+if (!place_meeting(x,y+moveSpeed,obj_wall)) {
+	y += moveSpeed;
+}

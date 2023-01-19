@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Throw toward the mouse, and stop after some time.
 direction = point_direction(x,y,mouse_x,mouse_y)
-speed = 10;
-friction = 0.2;
+speed = 8;
+friction = 0.25;
+image_angle = random(180);

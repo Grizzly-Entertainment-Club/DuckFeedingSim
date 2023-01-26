@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wall",
+  "name": "obj_floatingText",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -21,8 +21,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
-  "properties": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"text","varType":2,"value":"noMsg","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",

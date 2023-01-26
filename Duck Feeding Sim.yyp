@@ -3,9 +3,8 @@
   "resourceVersion": "1.6",
   "name": "Duck Feeding Sim",
   "resources": [
-    {"id":{"name":"obj_oven","path":"objects/obj_oven/obj_oven.yy",},"order":1,},
-    {"id":{"name":"spr_bucket","path":"sprites/spr_bucket/spr_bucket.yy",},"order":6,},
     {"id":{"name":"obj_oven","path":"objects/obj_oven/obj_oven.yy",},"order":2,},
+    {"id":{"name":"spr_bucket","path":"sprites/spr_bucket/spr_bucket.yy",},"order":6,},
     {"id":{"name":"controller","path":"objects/controller/controller.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"obj_duck","path":"objects/obj_duck/obj_duck.yy",},"order":1,},
@@ -27,6 +26,8 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
+    {"name":"Linux","path":"options/linux/options_linux.yy",},
+    {"name":"macOS","path":"options/mac/options_mac.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -42,9 +43,9 @@
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":9,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Collidables","folderPath":"folders/Objects/Collidables.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Collidables","folderPath":"folders/Objects/Collidables.yy","order":8,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

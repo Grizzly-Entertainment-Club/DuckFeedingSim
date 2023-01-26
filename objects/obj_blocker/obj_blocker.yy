@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_counter",
-  "spriteId": {
-    "name": "spr_counter",
-    "path": "sprites/spr_counter/spr_counter.yy",
-  },
+  "name": "obj_blocker",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_blocker",
-    "path": "objects/obj_blocker/obj_blocker.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

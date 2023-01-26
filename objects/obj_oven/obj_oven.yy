@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_wall",
-    "path": "objects/obj_wall/obj_wall.yy",
+    "name": "obj_blocker",
+    "path": "objects/obj_blocker/obj_blocker.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -37,7 +37,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Collidables",
+    "path": "folders/Objects/Collidables.yy",
   },
 }

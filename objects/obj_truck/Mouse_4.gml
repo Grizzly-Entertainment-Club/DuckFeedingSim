@@ -3,3 +3,5 @@ if (distance_to_object(obj_player) < 20) {
 } else {
 	displayError("Too far away!");
 }
+
+state = TRUCK_STATE.LEAVING;

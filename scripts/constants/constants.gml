@@ -7,4 +7,11 @@ function constants(){
 		ATTACKING,
 		EATING
 	}
+	
+	enum TRUCK_STATE {
+		WAITING,
+		LEAVING,
+		AT_STORE,
+		RETURNING
+	}
 }

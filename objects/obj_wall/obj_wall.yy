@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_wall",
   "spriteId": {
-    "name": "spr_oven",
-    "path": "sprites/spr_oven/spr_oven.yy",
+    "name": "spr_brickWall",
+    "path": "sprites/spr_brickWall/spr_brickWall.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,3 +1,3 @@
 draw_self();
-draw_circle(x,y,smell_range,true);
-draw_circle(wander_x,wander_y,1,false);
+draw_circle(x,y,smellRange,true);
+draw_circle(wanderX,wanderY,1,false);

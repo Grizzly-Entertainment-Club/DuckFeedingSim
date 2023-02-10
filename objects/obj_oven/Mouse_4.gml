@@ -3,26 +3,26 @@
 //See if Player is in range.
 if (distance_to_object(obj_player) < 20) {
 	//Grab Bread from Oven
-	if has_bread == true{
+	if hasBread == true{
 		obj_player.bread+=10;
-		has_bread = false;
+		hasBread = false;
 	}
 	//Add Flour to Oven
-	else if !has_flour && obj_player.flour >=1{
-		has_flour = true;
+	else if !hasFlour && obj_player.flour >=1{
+		hasFlour = true;
 		obj_player.flour--;
 	}
 	//Add Water to Oven
-	else if !has_water && obj_player.bucket_filled {
-		has_water = true;
-		obj_player.bucket_filled = false;
+	else if !hasWater && obj_player.bucketFilled {
+		hasWater = true;
+		obj_player.bucketFilled = false;
 	}
 	//Combine Water and Flour and Make Bread
-	if has_flour && has_water{
-		has_flour = false;
-		has_water = false;
-		has_bread = true;
+	if hasFlour && hasWater{
+		hasFlour = false;
+		hasWater = false;
+		hasBread = true;
 	}
 } else {
-	displayError("Too Far Away!");
+	DisplayError("Too Far Away!");
 }

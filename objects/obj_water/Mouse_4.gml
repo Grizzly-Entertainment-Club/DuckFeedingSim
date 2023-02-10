@@ -1,6 +1,8 @@
 /// @description Interact
+
+//If close enough fill bucket.
 if (distance_to_object(obj_player) < 10) {
-	obj_player.bucket_filled = true;
+	obj_player.bucketFilled = true;
 } else {
-	displayError("Too far away!");
+	DisplayError("Too far away!");
 }

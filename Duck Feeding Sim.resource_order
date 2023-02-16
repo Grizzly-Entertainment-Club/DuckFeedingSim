@@ -7,6 +7,7 @@
     {"name":"Ground","order":5,"path":"folders/Tilesets/Ground.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"TruckScripts","order":7,"path":"scripts/TruckScripts/TruckScripts.yy",},
     {"name":"obj_oven","order":2,"path":"objects/obj_oven/obj_oven.yy",},
     {"name":"ts_ground","order":4,"path":"tilesets/ts_ground/ts_ground.yy",},
     {"name":"spr_bucket","order":6,"path":"sprites/spr_bucket/spr_bucket.yy",},

@@ -18,6 +18,8 @@ switch(state) {
 	//Truck is at the store, buying and selling materials.
 	case TRUCK_STATE.AT_STORE:
 		//Sell Inventory, Stock up on Items.
+		obj_controller.money += cargoValue;
+		cargoValue = 0;
 		state = TRUCK_STATE.RETURNING;
 	break;
 	

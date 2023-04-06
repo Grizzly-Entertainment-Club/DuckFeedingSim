@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_blocker",
+    "path": "sprites/spr_blocker/spr_blocker.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

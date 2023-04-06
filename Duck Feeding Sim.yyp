@@ -50,6 +50,7 @@
     {"id":{"name":"spr_oven","path":"sprites/spr_oven/spr_oven.yy",},"order":1,},
     {"id":{"name":"spr_bread","path":"sprites/spr_bread/spr_bread.yy",},"order":3,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"spr_blocker","path":"sprites/spr_blocker/spr_blocker.yy",},"order":0,},
     {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},"order":4,},
     {"id":{"name":"obj_counter","path":"objects/obj_counter/obj_counter.yy",},"order":2,},
     {"id":{"name":"DisplayError","path":"scripts/DisplayError/DisplayError.yy",},"order":0,},

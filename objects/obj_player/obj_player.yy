@@ -16,7 +16,10 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_person",
+    "path": "objects/obj_person/obj_person.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -39,8 +42,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_person",
+    "path": "sprites/spr_person/spr_person.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -9,6 +9,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_oven","order":2,"path":"objects/obj_oven/obj_oven.yy",},
     {"name":"ts_ground","order":4,"path":"tilesets/ts_ground/ts_ground.yy",},
+    {"name":"obj_person","order":11,"path":"objects/obj_person/obj_person.yy",},
     {"name":"spr_bucket","order":6,"path":"sprites/spr_bucket/spr_bucket.yy",},
     {"name":"spr_shallows","order":2,"path":"sprites/spr_shallows/spr_shallows.yy",},
     {"name":"obj_controller","order":5,"path":"objects/obj_controller/obj_controller.yy",},
@@ -21,6 +22,7 @@
     {"name":"spr_flour","order":7,"path":"sprites/spr_flour/spr_flour.yy",},
     {"name":"obj_water","order":4,"path":"objects/obj_water/obj_water.yy",},
     {"name":"spr_brickWall","order":12,"path":"sprites/spr_brickWall/spr_brickWall.yy",},
+    {"name":"obj_customer","order":12,"path":"objects/obj_customer/obj_customer.yy",},
     {"name":"spr_oven","order":1,"path":"sprites/spr_oven/spr_oven.yy",},
     {"name":"spr_bread","order":3,"path":"sprites/spr_bread/spr_bread.yy",},
     {"name":"spr_water","order":3,"path":"sprites/spr_water/spr_water.yy",},

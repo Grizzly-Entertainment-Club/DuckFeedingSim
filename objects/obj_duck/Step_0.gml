@@ -1,65 +1,46 @@
-switch (state) {
-	
-	//Duck is waiting at a set posistion.
-	case DUCK_STATE.WAITING:
-		timer--;
-		if (timer <= 0) {
-			timer = 60;
-			satisfaction--;
-			target = obj_player;
-			wanderX = clamp(x + (random(800) - 400),800,room_width);
-			wanderY = clamp(y + (random(800) - 400),0,room_height);
-			if (satisfaction > 0) {
-				state = DUCK_STATE.WAITING;
-			} else {
-				satisfaction = 0;
-				target = obj_player;
-				state = DUCK_STATE.ATTACKING;
-			}		
-		}
-	break;
-	
-	//Duck is walking to a random posistion.
+switch(state) {
 	case DUCK_STATE.WANDERING:
-		direction = point_direction(x,y,wanderX,wanderY);
-		if (distance_to_point(wanderX,wanderY) < 1) {
-			speed = 0;
-			state = DUCK_STATE.WAITING;
-		} else {
-			speed = 0.5;
-		}
-	break;
-	
-	//Duck is attacking the player.
-	case DUCK_STATE.ATTACKING:
-		direction = point_direction(x,y,target.x,target.y);
-		speed = 2;
-		var inst = collision_circle(x,y,smellRange,obj_bread,true,true);
-		if (inst != noone) {
-			state = DUCK_STATE.EATING;
-			target = inst;
-		}
-	break;
-	
-	//Duck is eating bread.
-	case DUCK_STATE.EATING:
-		var player = collision_circle(x,y,eatRange,target,true,true);
-		if (player != noone) {
-			target.hp--;
-			speed = 0;
-			if (target.hp <= 0) {
-				instance_destroy(target);
-				satisfaction = 5;
-				timer = 60;
-				target = obj_player;
-				wanderX = x + (random(200) - 100);
-				wanderY = y + (random(200) - 100);
-				state = DUCK_STATE.WANDERING;
+		//Moving to a random point it can see.
+		mp_potential_step_object(targetX,targetY,moveSpeed/2,obj_blocker);
+		if CheckIfAtTarget() {
+			if satisfaction > 0 {
+				satisfaction--;
+				targetX = clamp(random_range(x-300,x+300),720,room_width - 20);
+				targetY = clamp(random_range(y-300,y+300),20,room_height - 20);
+			} else {
+				state = DUCK_STATE.SEARCHING;
 			}
-		} else {
-			direction = point_direction(x,y,target.x,target.y);
-			speed = 2;
 		}
 	break;
-	
+	case DUCK_STATE.SEARCHING:
+		//Duck will look for the player
+		if (collision_line(x,y,obj_player.x,obj_player.y - 15,obj_blocker,false,true) == noone) {
+			//If the duck can see the player.
+			targetX = obj_player.x;
+			targetY = obj_player.y;
+			state = DUCK_STATE.ATTACKING;
+		} else {
+			if CheckIfAtTarget() {
+				FindNewWanderSpot();
+				targetX = clamp(random_range(x-300,x+300),20,room_width - 20);
+				targetY = clamp(random_range(y-300,y+300),20,room_height - 20);
+			}
+		}
+		mp_potential_step_object(targetX,targetY,moveSpeed/2,obj_blocker);
+	break;
+	case DUCK_STATE.ATTACKING:
+		//Moving towards the last known location of the player, while checking still looking for the player.
+		if (collision_line(x,y,obj_player.x,obj_player.y - 15,obj_blocker,false,true) == noone) {
+			targetX = obj_player.x;
+			targetY = obj_player.y;
+		} else {
+			if CheckIfAtTarget() {
+				state = DUCK_STATE.SEARCHING;
+			}
+		}
+		mp_potential_step_object(targetX,targetY,moveSpeed,obj_blocker);
+	break;
+	case DUCK_STATE.EATING:
+		//Moving to the closest food, that it can see.
+	break;
 }

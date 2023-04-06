@@ -7,6 +7,7 @@
     {"name":"Ground","order":5,"path":"folders/Tilesets/Ground.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"TruckScripts","order":7,"path":"scripts/TruckScripts/TruckScripts.yy",},
     {"name":"obj_oven","order":2,"path":"objects/obj_oven/obj_oven.yy",},
     {"name":"ts_ground","order":4,"path":"tilesets/ts_ground/ts_ground.yy",},
     {"name":"obj_person","order":11,"path":"objects/obj_person/obj_person.yy",},
@@ -28,6 +29,7 @@
     {"name":"spr_water","order":3,"path":"sprites/spr_water/spr_water.yy",},
     {"name":"obj_counter","order":2,"path":"objects/obj_counter/obj_counter.yy",},
     {"name":"DisplayError","order":4,"path":"scripts/DisplayError/DisplayError.yy",},
+    {"name":"DuckScripts","order":8,"path":"scripts/DuckScripts/DuckScripts.yy",},
     {"name":"spr_kitchenFloor","order":1,"path":"sprites/spr_kitchenFloor/spr_kitchenFloor.yy",},
     {"name":"obj_bread","order":3,"path":"objects/obj_bread/obj_bread.yy",},
     {"name":"obj_wall","order":3,"path":"objects/obj_wall/obj_wall.yy",},
